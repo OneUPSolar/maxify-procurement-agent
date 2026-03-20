@@ -1,0 +1,129 @@
+{
+    "fortune-energy": {
+        "name": "Fortune Energy",
+        "adapter": "fortune-energy",
+        "type": "email",
+        "url": "https://www.fortuneenergy.net",
+        "regions": ["CA", "AZ", "TX", "NJ", "NV", "OR", "WA", "CO", "FL", "NY"],
+        "warehouses": [
+            { "city": "Simi Valley", "state": "CA", "lat": 34.2694, "lon": -118.7815 },
+            { "city": "Sacramento", "state": "CA", "lat": 38.5816, "lon": -121.4944 },
+            { "city": "Austin", "state": "TX", "lat": 30.2672, "lon": -97.7431 },
+            { "city": "Edison", "state": "NJ", "lat": 40.5187, "lon": -74.4121 }
+        ],
+        "brands": ["Canadian Solar", "Silfab", "Q Cells", "Jinko", "Longi", "Solaria", "CSUN"],
+        "features": ["iDesign BOM Calculator", "Real-time pricing", "Design services"],
+        "responseTimeSLA": 4,
+        "priority": 1,
+        "phase": 1,
+        "active": true
+    },
+    "krannich-solar": {
+        "name": "Krannich Solar USA",
+        "adapter": "krannich",
+        "type": "portal",
+        "url": "https://krannich-solar.com/us-en/",
+        "shopUrl": "https://shop.krannich-solar.com",
+        "regions": ["TX", "FL", "CA", "NJ"],
+        "warehouses": [
+            { "city": "Houston", "state": "TX", "lat": 29.7604, "lon": -95.3698 },
+            { "city": "Miami", "state": "FL", "lat": 25.7617, "lon": -80.1918 },
+            { "city": "Los Angeles", "state": "CA", "lat": 34.0522, "lon": -118.2437 },
+            { "city": "Newark", "state": "NJ", "lat": 40.7357, "lon": -74.1724 }
+        ],
+        "features": ["Online shop", "CSV/XLSX upload", "Product comparison", "Design tools", "Online payment"],
+        "responseTimeSLA": 8,
+        "priority": 2,
+        "phase": 2,
+        "active": false
+    },
+    "baywa-re": {
+        "name": "BayWa r.e.",
+        "adapter": "baywa",
+        "type": "portal",
+        "url": "https://solar-store-us.baywa-re.com",
+        "regions": ["nationwide"],
+        "warehouses": [],
+        "features": ["Real-time inventory by warehouse", "Customized pricing", "Quote-to-order", "PV stocking strategy (3mo forecast)", "Online payments", "Order tracking"],
+        "responseTimeSLA": 4,
+        "priority": 2,
+        "phase": 2,
+        "active": false
+    },
+    "soligent": {
+        "name": "Soligent",
+        "adapter": "soligent",
+        "type": "portal",
+        "url": "https://www.soligent.net",
+        "portalUrl": "https://connect.soligent.net",
+        "regions": ["nationwide"],
+        "warehouses": [],
+        "features": ["Soligent Connect portal", "Real-time inventory", "Order tracking", "ACH payments", "Spending analytics"],
+        "responseTimeSLA": 8,
+        "priority": 2,
+        "phase": 2,
+        "active": false,
+        "notes": "Largest pure-play clean energy distributor since 1979. Authorized dealer application required."
+    },
+    "greentech-renewables": {
+        "name": "GreenTech Renewables",
+        "adapter": "greentech",
+        "type": "email",
+        "url": "https://www.greentechrenewables.com",
+        "regions": ["nationwide"],
+        "warehouses": [],
+        "features": ["100+ locations", "Logistics/warehouse support", "Design services", "Finance services"],
+        "responseTimeSLA": 24,
+        "priority": 3,
+        "phase": 2,
+        "active": false,
+        "notes": "Formerly CED Greentech. Largest physical footprint — 100+ locations."
+    },
+    "renvu": {
+        "name": "RENVU",
+        "adapter": "renvu",
+        "type": "ecommerce",
+        "url": "https://www.renvu.com",
+        "regions": ["nationwide"],
+        "warehouses": [],
+        "features": ["Public pricing", "E-commerce ordering", "Dealer price list"],
+        "responseTimeSLA": 2,
+        "priority": 3,
+        "phase": 2,
+        "active": false,
+        "notes": "Visible pricing online. Good for instant price benchmarking."
+    },
+    "civicsolar": {
+        "name": "CivicSolar",
+        "adapter": "civicsolar",
+        "type": "email",
+        "url": "https://www.civicsolar.com",
+        "regions": ["nationwide", "Caribbean", "Latin America"],
+        "warehouses": [
+            { "city": "Oakland", "state": "CA", "lat": 37.8044, "lon": -122.2712 },
+            { "city": "Boston", "state": "MA", "lat": 42.3601, "lon": -71.0589 },
+            { "city": "Austin", "state": "TX", "lat": 30.2672, "lon": -97.7431 }
+        ],
+        "features": ["Equipment + engineering + financing", "US + Caribbean + LatAm coverage"],
+        "responseTimeSLA": 24,
+        "priority": 3,
+        "phase": 3,
+        "active": false,
+        "notes": "Good for Mexico market expansion."
+    },
+    "wesco": {
+        "name": "Wesco",
+        "adapter": "wesco",
+        "type": "api",
+        "url": "https://www.wesco.com",
+        "apiPortal": "https://apideveloper.wesco.com",
+        "regions": ["nationwide"],
+        "warehouses": [],
+        "features": ["REST API developer portal", "Major electrical + solar distributor"],
+        "responseTimeSLA": 4,
+        "priority": 3,
+        "phase": 3,
+        "active": false,
+        "notes": "Most API-ready traditional distributor. Has developer portal."
+    }
+}

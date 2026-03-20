@@ -1,0 +1,88 @@
+{
+    "categories": {
+        "panels": {
+            "description": "Solar Panels",
+            "defaultMargin": 0.05,
+            "minMargin": 0.03,
+            "maxMargin": 0.08,
+            "notes": "Commodity market, compete on volume"
+        },
+        "inverters": {
+            "description": "Inverters (String, Micro, Hybrid)",
+            "defaultMargin": 0.08,
+            "minMargin": 0.05,
+            "maxMargin": 0.10,
+            "notes": "Higher complexity, less price transparency"
+        },
+        "batteries": {
+            "description": "Battery Energy Storage Systems",
+            "defaultMargin": 0.08,
+            "minMargin": 0.05,
+            "maxMargin": 0.10,
+            "notes": "Growing category, strong demand"
+        },
+        "racking": {
+            "description": "Racking and Mounting Systems",
+            "defaultMargin": 0.12,
+            "minMargin": 0.08,
+            "maxMargin": 0.15,
+            "notes": "Fragmented market, highest margin"
+        },
+        "bos": {
+            "description": "Balance of System (wiring, conduit, disconnects)",
+            "defaultMargin": 0.15,
+            "minMargin": 0.10,
+            "maxMargin": 0.20,
+            "notes": "Small items, high margin percentage low absolute $"
+        },
+        "ev_chargers": {
+            "description": "EV Charging Equipment",
+            "defaultMargin": 0.10,
+            "minMargin": 0.08,
+            "maxMargin": 0.12,
+            "notes": "Emerging add-on category"
+        }
+    },
+    "volumeTiers": {
+        "starter": {
+            "description": "< $10K monthly volume",
+            "marginMultiplier": 1.0
+        },
+        "growth": {
+            "description": "$10K - $50K monthly",
+            "marginMultiplier": 0.85,
+            "notes": "-1% across categories"
+        },
+        "pro": {
+            "description": "$50K - $200K monthly",
+            "marginMultiplier": 0.70,
+            "notes": "-2% across categories"
+        },
+        "enterprise": {
+            "description": "> $200K monthly",
+            "marginMultiplier": 0.60,
+            "notes": "Custom negotiated"
+        }
+    },
+    "subscriptionTiers": {
+        "starter": {
+            "monthlyPrice": 0,
+            "quotesPerMonth": 5,
+            "maxSuppliers": 2,
+            "marginTier": "starter"
+        },
+        "pro": {
+            "monthlyPrice": 49,
+            "quotesPerMonth": null,
+            "maxSuppliers": null,
+            "marginTier": "growth"
+        },
+        "enterprise": {
+            "monthlyPrice": "custom",
+            "quotesPerMonth": null,
+            "maxSuppliers": null,
+            "marginTier": "enterprise",
+            "features": ["api_access", "white_label", "dedicated_support"]
+        }
+    }
+}
